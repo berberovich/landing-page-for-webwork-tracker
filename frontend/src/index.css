@@ -5,9 +5,108 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1e1e1e;
+  color: white;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1331px;
+  margin: 17px auto 0 auto;
+}
+
+main {
+  max-width: 1331px;
+  margin: 17px auto 0 auto;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.btn {
+  padding: 15px 40px 14px 40px;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid #8276ff;
+  border-radius: 131px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.yellow-fontcolor {
+  color: #ffc759;
+  font-weight: 700;
+}
+
+.upmost-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.upmost-section__content {
+  padding-top: 78px;
+}
+
+.upmost-section__content__paragraph {
+  font-size: 49px;
+  max-width: 555px;
+}
+
+.upmost-section__content__quote {
+  margin-top: 20px;
+}
+
+.upmost-section .btn {
+  margin-top: 41px;
+}
+.upmost-section__content__company-names {
+  display: flex;
+  align-items: center;
+  margin-top: 30.93px;
+}
+.upmost-section__content__company-names img:nth-child(1) {
+  margin-right: 27.01px;
+}
+.upmost-section__content__company-names img:nth-child(2) {
+  margin-right: 28.09px;
+}
+
+.upmost-section__content__rating-stars {
+  margin-top: 64.07px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.short {
+  max-width: 240px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 17.27px;
+}
+
+.brand-name {
+  font-size: 24px;
+}
+
+small {
+  font-size: 16px;
 }

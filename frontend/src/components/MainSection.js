@@ -8,28 +8,35 @@ import fiftypercentoff from "../assets/fiftypercentoff.png";
 import Group3745 from "../assets/Group 3745.png";
 function MainSection() {
   return (
-    <section className="main-content">
-      <div>
-        <p>
-          <span>CYBER MONDAY</span> means an even <span>BIGGER SALE</span>
+    <section className="upmost-section">
+      <div className="upmost-section__content">
+        <p className="upmost-section__content__paragraph">
+          <span className="yellow-fontcolor">CYBER MONDAY</span> means an even{" "}
+          <span className="yellow-fontcolor">BIGGER SALE</span>
         </p>
-        <small>Cyber Monday saves you money, WebWork saves you time.</small>
+        <div className="upmost-section__content__quote short">
+          <small>Cyber Monday saves you money, WebWork saves you time.</small>
+        </div>
         <Button text="SAVE BIG NOW" />
-        <img src={Group3745} alt="" />
-        <small>14-day free trial | No credit card required</small>
-        <div>
+
+        <div className="upmost-section__content__quote flex">
+          <img src={Group3745} alt="" />
+          <small>14-day free trial | No credit card required</small>
+        </div>
+
+        <div className="upmost-section__content__rating-stars">
           <img src={ratingStars} alt="rating stars" />
           <small>
             Reviews from <b>51k+</b> happy users below and beyond
           </small>
         </div>
-        <div className="company-names">
+        <div className="upmost-section__content__company-names">
           <img src={capterra} alt="capterra" />
           <img src={crowd} alt="crowd" />
           <img src={getApp} alt="getApp" />
         </div>
       </div>
-      <div className="sale-percent-image">
+      <div className="upmost-section__sale-percent-image">
         <img src={fiftypercentoff} alt="50% sale" />
       </div>
     </section>
