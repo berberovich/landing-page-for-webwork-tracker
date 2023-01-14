@@ -12,9 +12,12 @@ import featureImage3 from "../assets/features-images/featureImage3.png";
 import featureImage4 from "../assets/features-images/featureImage4.png";
 import featureImage5 from "../assets/features-images/featureImage5.png";
 import featureImage6 from "../assets/features-images/featureImage6.png";
+import { generateUniqueID } from "../components/services";
+
+const generateID = generateUniqueID();
 
 export const plan1 = {
-  id: 1,
+  id: generateID.next().value,
   topRightImagePath: neonCircle1,
   duration: "Monthly",
   previousPrice: "$4.99",
@@ -28,7 +31,7 @@ export const plan1 = {
 };
 
 export const plan2 = {
-  id: 2,
+  id: generateID.next().value,
   topRightImagePath: neonCircle2,
   duration: "Yearly",
   previousPrice: "$4.09",
@@ -42,8 +45,8 @@ export const plan2 = {
 };
 
 function Feature(obj) {
-  const { id, title, content, advantages, icon, image } = obj;
-  this.id = id;
+  const { title, content, advantages, icon, image } = obj;
+  this.id = generateID.next().value;
   this.title = title;
   this.content = content;
   this.advantages = advantages.map((adv, i) => {
@@ -84,8 +87,7 @@ const feature2 = new Feature({
   image: featureImage2,
 });
 
-const feature3 = {
-  id: 3,
+const feature3 = new Feature({
   title: "Task Management",
   content: "Assign, manage and work with tasks on Task Management system",
   advantages: [
@@ -97,10 +99,9 @@ const feature3 = {
   ],
   icon: featureLogo3,
   image: featureImage3,
-};
+});
 
-const feature4 = {
-  id: 4,
+const feature4 = new Feature({
   title: "Communication Channels",
   content: "Communicate with your team without leaving WebWork Time Tracker",
   advantages: [
@@ -111,10 +112,9 @@ const feature4 = {
   ],
   icon: featureLogo4,
   image: featureImage4,
-};
+});
 
-const feature5 = {
-  id: 5,
+const feature5 = new Feature({
   title: "HR Tools",
   content: "Keep your workspace organized with the help of HR tools",
   advantages: [
@@ -124,10 +124,9 @@ const feature5 = {
   ],
   icon: featureLogo5,
   image: featureImage5,
-};
+});
 
-const feature6 = {
-  id: 6,
+const feature6 = new Feature({
   title: "Online Reports",
   content: "Get detailed reports with all the tracked information",
   advantages: [
@@ -139,7 +138,7 @@ const feature6 = {
   ],
   icon: featureLogo6,
   image: featureImage6,
-};
+});
 
 export const features = [
   feature1,

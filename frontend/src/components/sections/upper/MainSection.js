@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../Button";
+import Button from "../../Button.js";
 
-import fiftypercentoff from "../../assets/fiftypercentoff.png";
+import fiftypercentoff from "../../../assets/fiftypercentoff.png";
 import MainSectionContent from "./MainSectionContent";
 
 function MainSection() {

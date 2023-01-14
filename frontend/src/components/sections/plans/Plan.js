@@ -1,6 +1,6 @@
 import React from "react";
-import tick from "../assets/tick.png";
-import Button from "./Button.js";
+import tick from "../../../assets/tick.png";
+import Button from "../../Button.js";
 function Plan({ data }) {
   const {
     topRightImagePath,
