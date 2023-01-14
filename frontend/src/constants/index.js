@@ -12,7 +12,7 @@ import featureImage3 from "../assets/features-images/featureImage3.png";
 import featureImage4 from "../assets/features-images/featureImage4.png";
 import featureImage5 from "../assets/features-images/featureImage5.png";
 import featureImage6 from "../assets/features-images/featureImage6.png";
-import { generateUniqueID } from "../components/services";
+import { generateUniqueID } from "../services";
 
 const generateID = generateUniqueID();
 
@@ -59,7 +59,7 @@ function Feature(obj) {
   this.image = image;
 }
 
-const feature1 = new Feature({
+const featureData1 = {
   title: "Time Tracking With Screenshots",
   content:
     "Track the time your employees spend on work and get detailed information",
@@ -71,9 +71,8 @@ const feature1 = new Feature({
   ],
   icon: featureLogo1,
   image: featureImage1,
-});
-
-const feature2 = new Feature({
+};
+const featureData2 = {
   title: "Productivity Monitoring",
   content:
     "See how productive your employees are and make sure they don't burnout",
@@ -85,9 +84,8 @@ const feature2 = new Feature({
   ],
   icon: featureLogo2,
   image: featureImage2,
-});
-
-const feature3 = new Feature({
+};
+const featureData3 = {
   title: "Task Management",
   content: "Assign, manage and work with tasks on Task Management system",
   advantages: [
@@ -99,9 +97,8 @@ const feature3 = new Feature({
   ],
   icon: featureLogo3,
   image: featureImage3,
-});
-
-const feature4 = new Feature({
+};
+const featureData4 = {
   title: "Communication Channels",
   content: "Communicate with your team without leaving WebWork Time Tracker",
   advantages: [
@@ -112,9 +109,8 @@ const feature4 = new Feature({
   ],
   icon: featureLogo4,
   image: featureImage4,
-});
-
-const feature5 = new Feature({
+};
+const featureData5 = {
   title: "HR Tools",
   content: "Keep your workspace organized with the help of HR tools",
   advantages: [
@@ -124,9 +120,8 @@ const feature5 = new Feature({
   ],
   icon: featureLogo5,
   image: featureImage5,
-});
-
-const feature6 = new Feature({
+};
+const featureData6 = {
   title: "Online Reports",
   content: "Get detailed reports with all the tracked information",
   advantages: [
@@ -138,7 +133,19 @@ const feature6 = new Feature({
   ],
   icon: featureLogo6,
   image: featureImage6,
-});
+};
+
+const feature1 = new Feature(featureData1);
+
+const feature2 = new Feature(featureData2);
+
+const feature3 = new Feature(featureData3);
+
+const feature4 = new Feature(featureData4);
+
+const feature5 = new Feature(featureData5);
+
+const feature6 = new Feature(featureData6);
 
 export const features = [
   feature1,

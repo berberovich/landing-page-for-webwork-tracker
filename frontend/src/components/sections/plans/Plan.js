@@ -21,17 +21,17 @@ function Plan({ data }) {
         <div className="new-price">{newPrice}</div>
         <div className="peruser">per user/month</div>
       </div>
-      <div className="features-container">
+      <ul className="features-container">
         {features.map((feature) => {
           const { id, content } = feature;
           return (
-            <div key={id} className="features-container__feature">
+            <li key={id} className="features-container__feature">
               <img src={tick} alt="" />
               <span className="plan-content">{content}</span>
-            </div>
+            </li>
           );
         })}
-      </div>
+      </ul>
       <div className="btn-container">
         <Button text="get your deal" />
       </div>

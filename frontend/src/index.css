@@ -1,10 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
   background-color: #1e1e1e;
   color: white;
 }
@@ -26,7 +22,7 @@ header {
   margin: 17px auto 0 auto;
 }
 
-main {
+section {
   max-width: 1331px;
   margin: 17px auto 0 auto;
 }
@@ -64,11 +60,13 @@ main {
 
 .upmost-section__content__paragraph {
   font-size: 49px;
-  max-width: 555px;
+  max-width: 620px;
+  line-height: 69px;
 }
 
 .upmost-section__content__quote {
   margin-top: 20px;
+  line-height: 24px;
 }
 
 .upmost-section .btn {
@@ -220,4 +218,109 @@ small {
   text-align: center;
   max-width: 456px;
   margin: 180px auto 180px auto;
+}
+
+.features-content-container {
+  padding-bottom: 35px;
+  position: relative;
+  background: linear-gradient(
+    147.19deg,
+    #362a87 -2.99%,
+    #2c2747 82.25%,
+    #4323f1 157.46%
+  );
+}
+.features {
+  position: relative;
+}
+
+.feature-names-container {
+  text-align: center;
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 93px;
+  padding-top: 82.39px;
+}
+
+.feature-names-container::after {
+  position: absolute;
+  bottom: -34px;
+  content: "";
+  display: block;
+  z-index: 2;
+  background-color: #ffffff;
+  left: 84px;
+  right: 86px;
+  height: 4px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.feature-title {
+  cursor: pointer;
+}
+
+.feature-paragraph {
+  font-size: 39px;
+  max-width: 660px;
+  margin-bottom: 30px;
+}
+
+.feature-list-item {
+  margin-bottom: 16px;
+}
+.feature-list-item__content {
+  margin-left: 18px;
+}
+
+.feature-details-container {
+  padding: 108px 89px 130px 54px;
+  display: flex;
+  gap: 50px;
+  border-radius: 26px;
+}
+
+.feature-btn {
+  margin-top: 41px;
+}
+
+.company-logos-container {
+  margin: 180px auto 196.62px auto;
+  text-align: center;
+}
+
+.company-logos-img {
+  display: inline-block;
+  margin-right: 58px;
+}
+
+.company-logos-container__paragraph {
+  font-weight: 600;
+  font-size: 31px;
+  margin-bottom: 57.43px;
+}
+
+footer {
+  background: linear-gradient(
+    147.19deg,
+    #362a87 -2.99%,
+    #2c2747 82.25%,
+    #4323f1 157.46%
+  );
+  padding-top: 119px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content {
+  margin-left: 300px;
+}
+.footer-content span {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 49px;
 }
