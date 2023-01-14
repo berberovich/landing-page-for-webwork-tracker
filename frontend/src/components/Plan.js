@@ -1,8 +1,9 @@
 import React from "react";
 import tick from "../assets/tick.png";
+import Button from "./Button.js";
 function Plan({ data }) {
   const {
-    topRightPercentage,
+    topRightImagePath,
     duration,
     previousPrice,
     newPrice,
@@ -11,6 +12,9 @@ function Plan({ data }) {
   } = data;
   return (
     <div className="plans-section__plan">
+      <div className="topright-image-container">
+        <img src={topRightImagePath} className="plan-top-right-image" alt="" />
+      </div>
       <div className="duration">{duration}</div>
       <div className="price">
         <div className="previous-price">{previousPrice}</div>
@@ -28,6 +32,10 @@ function Plan({ data }) {
           );
         })}
       </div>
+      <div className="btn-container">
+        <Button text="get your deal" />
+      </div>
+      <span className="bottom-right-text">{bottomRightText}</span>
     </div>
   );
 }

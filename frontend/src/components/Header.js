@@ -6,9 +6,9 @@ function Header() {
     <header>
       <div className="brand-container">
         <img src={brandImage} className="brand-image" alt="" />
-        <span className="brand-name">
+        <a href="#" className="brand-name">
           Web<span className="littlebold">Work</span>
-        </span>
+        </a>
       </div>
       <div className="btn-container">
         <Button text="get now" />
