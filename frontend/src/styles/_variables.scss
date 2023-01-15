@@ -1,0 +1,25 @@
+//font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+$font-size: 16px;
+$font-family: "Roboto", sans-serif;
+$line-height: 1.1718;
+
+//colors
+$purple: #8276FF;
+$darker-purple: linear-gradient(
+    147.19deg,
+    #362a87 -2.99%,
+    #2c2747 82.25%,
+    #4323f1 157.46%
+  );
+
+  
+$text-primary: #FFFF;
+$text-secondary: #FFC759;
+
+$background-color: #1e1e1e;
+
+
+//container sizes
+$container-width: 1331px;
+$container-margin: 17px auto 0 auto

@@ -9,8 +9,6 @@ function FeatureNames({ title, icon, id, setActiveId, activeId, feature }) {
   if (feature.id === activeId) {
     className += " active";
   }
-  console.log("feature.id", feature.id);
-  console.log("activeId", activeId);
   return (
     <div onClick={handleFeatureNameClick} className="feature-title">
       <div className="feature-titles-container__image">

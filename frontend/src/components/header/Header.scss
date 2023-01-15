@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.header {
+  max-width: $container-width;
+  margin: $container-margin;
+
+  &__brand-container {
+    gap: 11px;
+
+    &__brand-name {
+      font-size: 24px;
+    }
+  }
+}

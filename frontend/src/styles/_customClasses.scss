@@ -1,0 +1,71 @@
+//text align
+.text-center {
+  text-align: center;
+}
+
+//cursor
+.cursor-pointer {
+  cursor: pointer;
+}
+
+//flex
+.flex {
+  display: flex;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.items-baseline {
+  align-items: baseline;
+}
+.items-stretch {
+  align-items: stretch;
+}
+
+// Flex justify content
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+//font weight
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.font-weight-700 {
+  font-weight: 700;
+}
+
+//btn
+.btn {
+  padding: 15px 40px 14px 40px;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid #8276ff;
+  border-radius: 131px;
+  font-size: 18px;
+  cursor: pointer;
+}

@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.footer {
+    background: $darker-purple;
+    padding-top: 119px;
+
+
+    &__content {
+        margin-left: 300px;
+
+        &__span {
+            display: inline-block;
+                font-weight: 600;
+                margin-bottom: 30px;
+                font-size: 49px;
+        }
+    }
+
+    &__btn {
+        background-color: $purple;
+    }
+
+}
