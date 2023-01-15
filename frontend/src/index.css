@@ -249,7 +249,7 @@ small {
   content: "";
   display: block;
   z-index: 2;
-  background-color: #ffffff;
+  background-color: #e7e9f2;
   left: 84px;
   right: 86px;
   height: 4px;
@@ -323,4 +323,20 @@ footer {
   font-weight: 600;
   margin-bottom: 30px;
   font-size: 49px;
+}
+.feature-title {
+  z-index: 3;
+  position: relative;
+}
+.active::after {
+  position: absolute;
+  bottom: -44px;
+  content: "";
+  display: block;
+  z-index: 3;
+  background-color: black;
+  /* left: 84px; */
+  /* right: 86px; */
+  height: 4px;
+  width: 110px;
 }

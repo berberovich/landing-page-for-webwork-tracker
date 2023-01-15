@@ -13,6 +13,8 @@ function FeaturesContent() {
           return (
             <FeatureNames
               setActiveId={setActiveId}
+              feature={feature}
+              activeId={activeId}
               key={id}
               id={id}
               icon={icon}

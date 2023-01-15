@@ -1,15 +1,22 @@
 import React from "react";
 
-function FeatureNames({ title, icon, id, setActiveId }) {
+function FeatureNames({ title, icon, id, setActiveId, activeId, feature }) {
   const handleFeatureNameClick = () => {
     setActiveId(id);
   };
+  let className = "feature-titles-container__title";
+
+  if (feature.id === activeId) {
+    className += " active";
+  }
+  console.log("feature.id", feature.id);
+  console.log("activeId", activeId);
   return (
     <div onClick={handleFeatureNameClick} className="feature-title">
       <div className="feature-titles-container__image">
         <img src={icon} alt="" />
       </div>
-      <div className="feature-titles-container__title">{title}</div>
+      <div className={className}>{title}</div>
     </div>
   );
 }
