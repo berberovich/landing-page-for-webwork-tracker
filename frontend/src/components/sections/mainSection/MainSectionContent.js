@@ -1,10 +1,8 @@
 import React from "react";
-import Button from "../../Button";
 import ratingStars from "../../../assets/ratingStars.png";
 import capterra from "../../../assets/capterra.png";
 import crowd from "../../../assets/crowd.png";
 import getApp from "../../../assets/getApp.png";
-import fiftypercentoff from "../../../assets/fiftypercentoff.png";
 import Group3745 from "../../../assets/Group 3745.png";
 
 function MainSectionContent() {

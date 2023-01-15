@@ -26,6 +26,10 @@ textarea {
 button:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
+section {
+  max-width: 1331px;
+  margin: 17px auto 0 auto;
+}
 a {
   text-decoration: none;
   color: white;

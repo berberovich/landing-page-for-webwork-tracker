@@ -18,6 +18,11 @@
     border-radius: 10px;
     padding: 54px 170px 63px 157px;
     position: relative;
+    &__top-right-image {
+      position: absolute;
+      top: -80px;
+      right: -89px;
+    }
 
     &__bottom-right-text {
       position: absolute;
@@ -44,6 +49,17 @@
         position: relative;
         position: absolute;
         left: -90px;
+
+        &:after {
+          position: absolute;
+          top: 19px;
+          content: "";
+          display: block;
+          width: 100%;
+          height: 3px;
+          background-color: #f354b4;
+          transform: rotate(-16deg);
+        }
       }
 
       &__new-price {

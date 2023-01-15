@@ -12,6 +12,7 @@ import featureImage3 from "../assets/features-images/featureImage3.png";
 import featureImage4 from "../assets/features-images/featureImage4.png";
 import featureImage5 from "../assets/features-images/featureImage5.png";
 import featureImage6 from "../assets/features-images/featureImage6.png";
+
 import { Feature, generateUniqueID } from "../services";
 
 const generateID = generateUniqueID();

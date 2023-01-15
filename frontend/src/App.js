@@ -1,6 +1,5 @@
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import Awards from "./components/sections/awards/Awards";
 import CompanyLogos from "./components/sections/companyLogos/CompanyLogos";
 import Features from "./components/sections/features/Features";
 import Plans from "./components/sections/plans/Plans";
@@ -13,7 +12,6 @@ function App() {
       <Header />
       <MainSection />
       <Plans plansArr={[plan1, plan2]} />
-      <Awards />
       <Features />
       <CompanyLogos />
       <Footer />
