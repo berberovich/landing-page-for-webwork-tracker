@@ -1,0 +1,50 @@
+@import "../../../styles/variables";
+.main-section {
+  &__content {
+    padding-top: 163.56px;
+    p {
+      font-size: 49px;
+      max-width: 620px;
+      line-height: 69px;
+    }
+    small {
+      font-size: 16px;
+    }
+    &__quote {
+      margin-top: 20px;
+      margin-bottom: 41px;
+      line-height: 24px;
+
+      &__short-width {
+        display: inline-block;
+        max-width: 240px;
+      }
+    }
+
+    &__btn {
+      background-color: $purple;
+    }
+    &__rating-stars {
+      margin-top: 64.07px;
+      gap: 10px;
+    }
+
+    &__flex-gap {
+      gap: 17.27px;
+    }
+
+    &__company-names {
+      margin-top: 30.93px;
+      img:nth-child(1) {
+        margin-right: 27.01px;
+      }
+      img:nth-child(2) {
+        margin-right: 28.09px;
+      }
+    }
+  }
+
+  &__percent-image {
+    margin-top: 83px;
+  }
+}

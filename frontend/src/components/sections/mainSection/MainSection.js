@@ -1,16 +1,14 @@
 import React from "react";
 import Button from "../../Button.js";
-
-import fiftypercentoff from "../../../assets/fiftypercentoff.png";
 import MainSectionContent from "./MainSectionContent";
+import MainSectionImage from "./MainSectionImage.js";
+import "./MainSection.scss";
 
 function MainSection() {
   return (
-    <section className="upmost-section">
+    <section className="main-section flex justify-between">
       <MainSectionContent />
-      <div className="upmost-section__sale-percent-image">
-        <img src={fiftypercentoff} alt="50% sale" />
-      </div>
+      <MainSectionImage />
     </section>
   );
 }

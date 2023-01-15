@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+
+.logos {
+  margin: 180px auto 196.62px auto;
+
+  &__content {
+    font-weight: 600;
+    font-size: 31px;
+    margin-bottom: 57.43px;
+  }
+
+  &__image {
+    display: inline-block;
+    margin-right: 58px;
+  }
+}

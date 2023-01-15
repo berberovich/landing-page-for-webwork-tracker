@@ -1,41 +1,27 @@
 import React from "react";
-import tick from "../../../assets/tick.png";
 import Button from "../../Button.js";
+import PlanFeatures from "./PlanFeatures";
+import PlanImage from "./PlanImage";
 function Plan({ data }) {
-  const {
-    topRightImagePath,
-    duration,
-    previousPrice,
-    newPrice,
-    features,
-    bottomRightText,
-  } = data;
   return (
-    <div className="plans-section__plan">
-      <div className="topright-image-container">
-        <img src={topRightImagePath} className="plan-top-right-image" alt="" />
+    <div className="plan__content">
+      <PlanImage imagePath={data.topRightImagePath} />
+      <div className="plan__content__duration">{data.duration}</div>
+      <div className="plan__content__prices">
+        <div className="plan__content__prices__previous-price">
+          {data.previousPrice}
+        </div>
+        <div className="plan__content__prices__new-price">{data.newPrice}</div>
+        <div className="plan__content__prices__text">per user/month</div>
       </div>
-      <div className="duration">{duration}</div>
-      <div className="price">
-        <div className="previous-price">{previousPrice}</div>
-        <div className="new-price">{newPrice}</div>
-        <div className="peruser">per user/month</div>
+      <PlanFeatures features={data.features} />
+
+      <div>
+        <button className="plan__content__btn btn">get your deal</button>
       </div>
-      <ul className="features-container">
-        {features.map((feature) => {
-          const { id, content } = feature;
-          return (
-            <li key={id} className="features-container__feature">
-              <img src={tick} alt="" />
-              <span className="plan-content">{content}</span>
-            </li>
-          );
-        })}
-      </ul>
-      <div className="btn-container">
-        <Button text="get your deal" />
-      </div>
-      <span className="bottom-right-text">{bottomRightText}</span>
+      <span className="plan__content__bottom-right-text bottom-right-text">
+        {data.bottomRightText}
+      </span>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import "./Header.scss";
 function Header() {
   return (
     <header className="header flex align-center justify-between">
-      <div className="flex align-center header__brand-container">
+      <div className="flex items-center header__brand-container">
         <img src={brandImage} alt="brand image" />
         <a href="#" className="header__brand-container__brand-name">
           WebWork

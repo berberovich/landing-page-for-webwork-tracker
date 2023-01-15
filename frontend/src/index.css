@@ -35,135 +35,6 @@ section {
   font-weight: 700;
 }
 
-.upmost-section {
-  display: flex;
-  justify-content: space-between;
-}
-
-.upmost-section__content {
-  padding-top: 163.56px;
-}
-
-.upmost-section__content__paragraph {
-  font-size: 49px;
-  max-width: 620px;
-  line-height: 69px;
-}
-
-.upmost-section__content__quote {
-  margin-top: 20px;
-  line-height: 24px;
-}
-
-.upmost-section .btn {
-  margin-top: 41px;
-}
-
-.upmost-section__sale-percent-image {
-  margin-top: 83px;
-}
-.upmost-section__content__company-names {
-  display: flex;
-  align-items: center;
-  margin-top: 30.93px;
-}
-.upmost-section__content__company-names img:nth-child(1) {
-  margin-right: 27.01px;
-}
-.upmost-section__content__company-names img:nth-child(2) {
-  margin-right: 28.09px;
-}
-
-.upmost-section__content__rating-stars {
-  margin-top: 64.07px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.short {
-  max-width: 240px;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-  gap: 17.27px;
-}
-
-small {
-  font-size: 16px;
-}
-
-.littlebold {
-  font-weight: 500;
-}
-.plans-section {
-  margin-top: 213.96px;
-}
-.plans-section p {
-  text-align: center;
-  font-size: 39px;
-}
-.plans-section__plan-container {
-  display: flex;
-  gap: 208px;
-}
-.plans-section__plan {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(141, 159, 244, 0.3);
-  border-radius: 10px;
-  padding: 54px 170px 63px 157px;
-  position: relative;
-}
-
-.duration {
-  text-align: center;
-  font-weight: 700;
-  font-size: 39px;
-  margin-bottom: 40px;
-}
-
-.new-price {
-  font-weight: 700;
-  font-size: 80px;
-}
-
-.previous-price {
-  font-weight: 600;
-  font-size: 31px;
-  position: relative;
-}
-
-.price {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.previous-price {
-  position: absolute;
-  left: -90px;
-}
-
-.peruser {
-  text-align: center;
-  font-size: 28px;
-}
-
-.features-container__feature {
-  max-width: 400px;
-  font-size: 20px;
-  margin-bottom: 16px;
-}
-
-.plan-content {
-  margin-left: 17.81px;
-}
-
-.plans-section__paragraph {
-  margin-bottom: 107px;
-}
-
 .previous-price::after {
   position: absolute;
   top: 19px;
@@ -173,12 +44,6 @@ small {
   height: 3px;
   background-color: #f354b4;
   transform: rotate(-16deg);
-}
-
-.bottom-right-text {
-  position: absolute;
-  bottom: 28px;
-  right: 35px;
 }
 
 .plan-top-right-image {
@@ -273,21 +138,6 @@ ul {
   margin-top: 41px;
 }
 
-.company-logos-container {
-  margin: 180px auto 196.62px auto;
-  text-align: center;
-}
-
-.company-logos-img {
-  display: inline-block;
-  margin-right: 58px;
-}
-
-.company-logos-container__paragraph {
-  font-weight: 600;
-  font-size: 31px;
-  margin-bottom: 57.43px;
-}
 .feature-title {
   z-index: 3;
   position: relative;

@@ -1,0 +1,71 @@
+@import "../../../styles/variables";
+
+.plans {
+  margin-top: 213.96px;
+  &__title {
+    margin-bottom: 107px;
+    font-size: 39px;
+    font-weight: 600;
+  }
+}
+
+.plan {
+  gap: 208px;
+
+  &__content {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(141, 159, 244, 0.3);
+    border-radius: 10px;
+    padding: 54px 170px 63px 157px;
+    position: relative;
+
+    &__bottom-right-text {
+      position: absolute;
+      bottom: 28px;
+      right: 35px;
+    }
+    &__btn {
+      margin-top: 49px;
+      background-color: $purple;
+    }
+
+    &__duration {
+      text-align: center;
+      font-weight: 700;
+      font-size: 39px;
+      margin-bottom: 40px;
+    }
+
+    &__prices {
+      position: relative;
+      margin-bottom: 20px;
+      &__previous-price {
+        font-weight: 600;
+        font-size: 31px;
+        position: relative;
+        position: absolute;
+        left: -90px;
+      }
+
+      &__new-price {
+        font-weight: 700;
+        font-size: 80px;
+      }
+
+      &__text {
+        text-align: center;
+        font-size: 28px;
+      }
+    }
+  }
+
+  &__feature {
+    max-width: 400px;
+    font-size: 20px;
+    margin-bottom: 16px;
+
+    &__content {
+      margin-left: 17.81px;
+    }
+  }
+}

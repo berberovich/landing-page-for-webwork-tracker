@@ -8,16 +8,15 @@ import logo6 from "../../../assets/companyLogos/Logo 15.png";
 import logo7 from "../../../assets/companyLogos/Logo 16.png";
 import logo8 from "../../../assets/companyLogos/Logo 17.png";
 import logo9 from "../../../assets/companyLogos/Logo 18.png";
+import "./CompanyLogos.scss";
 function CompanyLogos() {
   const logos = [logo1, logo6, logo7, logo8, logo9, logo4, logo2, logo3, logo5];
   return (
-    <section className="company-logos-container">
-      <p className="company-logos-container__paragraph">
-        Trusted by 1000+ Companies
-      </p>
-      <div className="company-logos">
+    <section className="logos text-center">
+      <p className="logos__content">Trusted by 1000+ Companies</p>
+      <div>
         {logos.map((logo) => (
-          <img src={logo} className="company-logos-img" />
+          <img src={logo} className="logos__image" />
         ))}
       </div>
     </section>
