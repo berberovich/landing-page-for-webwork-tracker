@@ -17,9 +17,11 @@
   &__header {
     text-align: center;
     position: relative;
+    border-bottom: 1.5px solid #e7e9f2;
     gap: 93px;
-    padding: 82.39px 89px 0 54px;
-
+    padding: 82.39px 0 34px 0;
+    margin-right: 89px;
+    margin-left: 54px;
     &__feature {
       z-index: 3;
       position: relative;
@@ -27,18 +29,6 @@
       &__image {
         padding-bottom: 24.57px;
       }
-    }
-
-    &::after {
-      position: absolute;
-      bottom: -34px;
-      content: "";
-      display: block;
-      z-index: 2;
-      background-color: #e7e9f2;
-      left: 84px;
-      right: 86px;
-      height: 4px;
     }
   }
 }
@@ -65,18 +55,18 @@
   &__btn-container {
     margin-top: 41px;
   }
-
 }
 
 .active {
   &:after {
+    text-align: center;
     position: absolute;
-    bottom: -44px;
+    bottom: -40px;
     content: "";
     display: block;
     z-index: 3;
     background-color: white;
-    height: 4px;
-    width: 110px;
+    width: 100%;
+    height: 2.5px;
   }
 }
