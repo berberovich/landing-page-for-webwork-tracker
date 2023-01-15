@@ -2,8 +2,9 @@ import React from "react";
 
 function FeaturesTitle() {
   return (
-    <p className="features-content">
-      Save Big on All Features <i className="yellow-fontcolor">no exceptions</i>
+    <p className="features__content">
+      Save Big on All Features{" "}
+      <i className="yellow-font-color font-weight-600">no exceptions</i>
     </p>
   );
 }

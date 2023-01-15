@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../../Button.js";
 import PlanFeatures from "./PlanFeatures";
 import PlanImage from "./PlanImage";
 function Plan({ data }) {

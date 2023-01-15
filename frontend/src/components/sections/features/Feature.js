@@ -1,21 +1,19 @@
 import React from "react";
 import tick from "../../../assets/tick.png";
-import Button from "../../Button";
-function Feature({ data, activeId }) {
-  const { title, content, advantages, icon, image } = data;
+function Feature({ data }) {
+  const { content, advantages, image } = data;
   return (
-    <div className="feature-details-container">
+    <div className="feature flex">
       <div>
-        <div className="">
-          <p className="feature-paragraph">{content}</p>
-          <ul className="features-ul">
+        <div>
+          <p className="feature__content">{content}</p>
+          <ul>
             {advantages.map(({ id, content }) => {
               return (
                 <>
-                  <li className="feature-list-item" key={id}>
-                    {" "}
-                    <img src={tick} alt="" />
-                    <span className="feature-list-item__content">
+                  <li className="feature__list-item" key={id}>
+                    <img src={tick} alt="tick" />
+                    <span className="feature__list-item__content">
                       {content}
                     </span>
                   </li>
@@ -24,12 +22,12 @@ function Feature({ data, activeId }) {
             })}
           </ul>
         </div>
-        <div className="feature-btn">
-          <Button text="reserve your seat" />
+        <div className="feature__btn-container">
+          <button className="btn">reserve your seat</button>
         </div>
       </div>
-      <div className="feature-image">
-        <img src={image} alt="" />
+      <div>
+        <img src={image} alt="feature" />
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ import featureImage3 from "../assets/features-images/featureImage3.png";
 import featureImage4 from "../assets/features-images/featureImage4.png";
 import featureImage5 from "../assets/features-images/featureImage5.png";
 import featureImage6 from "../assets/features-images/featureImage6.png";
-import { generateUniqueID } from "../services";
+import { Feature, generateUniqueID } from "../services";
 
 const generateID = generateUniqueID();
 
@@ -43,21 +43,6 @@ export const plan2 = {
   ],
   bottomRightText: "",
 };
-
-function Feature(obj) {
-  const { title, content, advantages, icon, image } = obj;
-  this.id = generateID.next().value;
-  this.title = title;
-  this.content = content;
-  this.advantages = advantages.map((adv, i) => {
-    return {
-      id: i + 1,
-      content: adv,
-    };
-  });
-  this.icon = icon;
-  this.image = image;
-}
 
 const featureData1 = {
   title: "Time Tracking With Screenshots",

@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { features } from "../../../constants";
 import Feature from "./Feature";
-import FeatureNames from "./FeatureNames";
+import FeaturesHeader from "./FeaturesHeader.js";
 function FeaturesContent() {
   const [activeId, setActiveId] = useState(3);
   const targetFeature = features.find((feature) => feature.id === activeId);
   return (
-    <div className="features-content-container">
-      <div className="feature-names-container">
+    <div className="features__box">
+      <div className="features__header flex items-center">
         {features.map((feature) => {
           const { id, title, icon } = feature;
           return (
-            <FeatureNames
+            <FeaturesHeader
               setActiveId={setActiveId}
               feature={feature}
               activeId={activeId}
